@@ -43,7 +43,7 @@ function computeFrame(context){
         let r = frame.data[i] //red
         let g = frame.data[i+1] //green
         let b = frame.data[i+2]// //blue
-        if(g>100 & g<190){
+        if(r>10 & r<100 & g>100 & g<190 & b<50){
             frame.data[i+3] = 0 //alpha
         }
     }
